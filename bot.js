@@ -117,7 +117,7 @@ client.on("message", message => { // تقديم اداره
     if(!mention) return message.reply('منشن شخص');
 
     mention.addRole(mySupport).then(() => {
-      acRoom.send(`**[ ${mySupport} ] واعطائك رتبة ${mention} تم بنجاح قبولك**`);
+      acRoom.send(`**[ ${myHelper} ] واعطائك رتبة ${mention} تم بنجاح قبولك**`);
     });
   }
 }
