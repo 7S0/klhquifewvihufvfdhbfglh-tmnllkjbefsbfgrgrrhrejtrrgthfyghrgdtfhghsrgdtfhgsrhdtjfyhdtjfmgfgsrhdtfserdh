@@ -111,7 +111,7 @@ client.on("message", message => { // تقديم اداره
   let mention = message.mentions.members.first();
   let mySupport = message.guild.roles.find('name','• Mod');
   if(message.content.startsWith("$قبول")) {
-    let acRoom = message.guild.channels.find('name', '●-قبول-او-رفض');
+    let acRoom = message.guild.channels.find('name', '💥-accept-or-reject');
     if(acRoom) {
     if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return;
     if(!mention) return message.reply('منشن شخص');
