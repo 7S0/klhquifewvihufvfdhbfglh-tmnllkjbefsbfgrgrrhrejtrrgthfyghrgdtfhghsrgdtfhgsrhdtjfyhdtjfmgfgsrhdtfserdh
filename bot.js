@@ -127,7 +127,7 @@ client.on('message',async message => {
   let mention = message.mentions.members.first();
   if(message.content.startsWith("$رفض")) {
   if(!message.channel.guild) return;
-  let acRoom = message.guild.channels.find('name', '●-قبول-او-رفض');
+  let acRoom = message.guild.channels.find('name', '💥-accept-or-reject');
   if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return;
   if(!mention) return message.reply("منشن شخص");
  
